@@ -1,0 +1,19 @@
+{
+  "name": "testtask",
+  "version": "1.0.0",
+  "description": "teh test page of the task media",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kaige",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "*",
+    "ejs": "^2.4.1",
+    "ejs-mate": "^2.3.0",
+    "express": "*",
+    "mongoose": "*",
+    "morgan": "*"
+  }
+}
