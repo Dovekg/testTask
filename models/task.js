@@ -32,13 +32,9 @@ var TaskSchema = new Schema({
         type: Date,
         default: Date.now()
     },
-    problem: [{
+    reply: [{
         text: String,
-        reply: [
-            {
-                text: String
-            }
-        ]
+        time: Date
     }]
 });
 
