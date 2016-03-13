@@ -4,7 +4,9 @@
   "description": "teh test page of the task media",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js 'test/**/*.js'",
+    "test:watch": "npm run test -- --watch"
   },
   "author": "kaige",
   "license": "ISC",
@@ -14,6 +16,26 @@
     "ejs-mate": "^2.3.0",
     "express": "*",
     "mongoose": "*",
-    "morgan": "*"
+    "morgan": "*",
+    "babel-preset-stage-1": "^6.1.18",
+    "lodash": "^3.10.1",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-redux": "*",
+    "redux": "*"
+  },
+  "devDependencies": {
+    "babel-core": "*",
+    "babel-loader": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-react": "*",
+    "chai": "^3.5.0",
+    "chai-jquery": "^2.0.0",
+    "jquery": "^2.2.1",
+    "jsdom": "^8.1.0",
+    "mocha": "^2.4.5",
+    "react-addons-test-utils": "^0.14.7",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
   }
 }

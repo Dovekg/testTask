@@ -40,8 +40,6 @@ app.get('/', function(req, res){
     res.render('index');
 });
 
-
-
 app.listen(secret.port, function(err){
     if (err) throw err;
     console.log("Server is Runing on port" + secret.port);
