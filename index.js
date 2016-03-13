@@ -16,6 +16,7 @@ mongoose.connect(secret.database, function(err){
         console.log("Connected to the database");
     }
 });
+var db = mongoose.connection;
 
 var app = express();
 
